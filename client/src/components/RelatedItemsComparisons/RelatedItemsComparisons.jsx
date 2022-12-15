@@ -17,11 +17,17 @@ const Title = styled.h1`
   font-size: 2.5rem;
 `;
 
+const RelatedTitle = styled.h1`
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  font-size: 2.5rem;
+`;
+
 const RelatedItemsComparisons = ({ currentID, setCurrentID }) => {
 
   return (
     <Container>
-      <Title>Related Items</Title>
+      <RelatedTitle>Related Items</RelatedTitle>
       <RelatedList setCurrentID={setCurrentID} currentID={currentID} />
       <Title>Your Outfit</Title>
       <OutfitList currentID={currentID} setCurrentID={setCurrentID} />
